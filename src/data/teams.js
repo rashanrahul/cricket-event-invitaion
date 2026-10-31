@@ -1,0 +1,66 @@
+
+export const teams = [
+  {
+    id: 1,
+    name: "Craft-level Cookery Class Team",
+    captain: "Tharindu Dananjaya",
+    image: "/images/team-01.jpg",
+    color: "#16a34a",
+  },
+  {
+    id: 2,
+    name: "Craft-level Housekeeping Class Team",
+    captain: "M.R Rahul Oshan",
+    image: "/images/team-02.jpg",
+    color: "#2563eb",
+  },
+  {
+    id: 3,
+    name: "Certificate-level Front Office Class Team",
+    captain: "U.K.Gayan Kapuge",
+    image: "/images/team-03.jpg",
+    color: "#eab308",
+  },
+  {
+    id: 4,
+    name: "Craft-level Food & Beverage Class Team",
+    captain: "R.T Imesha",
+    image: "/images/team-04.jpg",
+    color: "#dc2626",
+  },
+  {
+    id: 5,
+    name: "Certificate-level Food & Beverage Class Team A",
+    captain: "Nadun Nimsara",
+    image: "/images/team-05.jpg",
+    color: "#7c3aed",
+  },
+  {
+    id: 6,
+    name: "Certificate-level Professional Cookery Class Team A",
+    captain: "W.M. Chamalka Sasindu",
+    image: "/images/team-06.jpg",
+    color: "#0891b2",
+  },
+  {
+    id: 7,
+    name: "Certificate-level Food & Beverage Class Team B",
+    captain: "Vishwa Navodaka",
+    image: "/images/team-07.jpg",
+    color: "#ea580c",
+  },
+  {
+    id: 8,
+    name: "Certificate-level Professional Cookery Class Team B",
+    captain: "Navod Prabathiya Bandara",
+    image: "/images/team-08.jpg",
+    color: "#db2777",
+  },
+  {
+    id: 9,
+    name: "Certificate-level Housekeeping class Team",
+    captain: "K.Tharindu Dananjaya",
+    image: "/images/team-09.jpg",
+    color: "#65a30d",
+  },
+];

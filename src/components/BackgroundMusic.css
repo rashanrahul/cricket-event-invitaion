@@ -1,0 +1,35 @@
+
+.music-control {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 18px;
+  border: 1px solid rgba(250, 204, 21, 0.6);
+  border-radius: 30px;
+  background: rgba(6, 20, 14, 0.9);
+  color: #facc15;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.music-control:hover {
+  background: #facc15;
+  color: #06140e;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .music-control {
+    right: 15px;
+    bottom: 15px;
+    padding: 11px 14px;
+  }
+}

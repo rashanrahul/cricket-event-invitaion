@@ -1,0 +1,60 @@
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+section {
+  padding: 100px 8%;
+  text-align: center;
+}
+
+#home {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("/images/cricket-stadium.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+#home h1 {
+  font-size: clamp(32px, 6vw, 75px);
+  font-weight: 900;
+  color: #b8ff70;
+}
+
+#home p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+#teams {
+  background: #0b1c13;
+}
+
+#countdown {
+  background: #10281a;
+}
+
+#details {
+  background: #0b1c13;
+}
+
+#party {
+  background: #171027;
+}
+
+section h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  color: #b8ff70;
+}

@@ -1,0 +1,175 @@
+
+#home.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 50% 85%, #174b29 0%, transparent 55%),
+    linear-gradient(180deg, #020906 0%, #071c12 65%, #020906 100%);
+}
+
+.stadium-glow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 10% 15%, #d8ffe733, transparent 25%),
+    radial-gradient(ellipse at 90% 15%, #d8ffe733, transparent 25%),
+    radial-gradient(ellipse at 50% 50%, #3a9c4833, transparent 55%);
+  animation: stadiumLights 4s ease-in-out infinite alternate;
+}
+
+.stadium-field {
+  position: absolute;
+  z-index: -1;
+  width: 130%;
+  height: 38%;
+  bottom: -23%;
+  left: -15%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    #276c34,
+    #123d20 60%,
+    #06160c
+  );
+  border-top: 2px solid #b8ff7044;
+  box-shadow: 0 -15px 60px #53ff6540;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  color: #c2e9c6;
+  font-size: 13px;
+  letter-spacing: 4px;
+  line-height: 1.8;
+}
+
+.hero-content h1 {
+  margin-top: 25px;
+  font-size: clamp(36px, 7vw, 76px);
+  font-weight: 900;
+  line-height: 1.05;
+  color: white;
+  letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #b8ff70;
+  text-shadow: 0 0 30px #8bff5866;
+}
+
+.cricket-ball-container {
+  width: 250px;
+  height: 250px;
+  margin: 5px 0;
+  filter: drop-shadow(0 0 35px #ff334455);
+}
+
+.hero-description {
+  color: #e2ffe4;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.hero-event-date {
+  margin-top: 18px;
+  color: #b8ff70;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.enter-button {
+  margin-top: 35px;
+  padding: 17px 38px;
+  border: 1px solid #b8ff70;
+  border-radius: 50px;
+  background: #b8ff70;
+  color: #07150a;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  box-shadow: 0 0 30px #b8ff7044;
+  transition: 0.3s;
+}
+
+.enter-button:hover {
+  background: transparent;
+  color: #b8ff70;
+  box-shadow: 0 0 40px #b8ff7077;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #b8ff70;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.hero-bottom span {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  animation: arrowBounce 1s infinite;
+}
+
+@keyframes stadiumLights {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@media (max-width: 600px) {
+  .hero-subtitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .hero-content h1 {
+    font-size: 39px;
+  }
+
+  .cricket-ball-container {
+    width: 210px;
+    height: 210px;
+  }
+
+  .hero-description {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .hero-event-date {
+    font-size: 13px;
+  }
+
+  .enter-button {
+    padding: 15px 25px;
+  }
+}
